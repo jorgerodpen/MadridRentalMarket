@@ -8,7 +8,9 @@
 
 ## Packages
 **Python Version**: 3.8.3
-**Packages used**: pandas, numpy, statsmodels, scikit-learn, sklearn_dummies, matplotlib, seaborn, flask
+
+**Packages used**: pandas, numpy, statsmodels, scikit-learn, sklearn_dummies, matplotlib, seaborn, flask.
+
 **Flask productionization tutorials**: https://blog.cambridgespark.com/deploying-a-machine-learning-model-to-the-web-725688b851c7 and https://towardsdatascience.com/productionize-a-machine-learning-model-with-flask-and-heroku-8201260503d2
 
 ## Web scraping
