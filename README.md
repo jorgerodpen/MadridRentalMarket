@@ -1,6 +1,6 @@
 # Madrid rental market
 ## Predicting the rent in Madrid 
-- Created a model that estimates the cost of the rent (relative error ~14%) to help tenants and owners coming up with a reasonable price.
+- Created a model that estimates the cost of the rent (relative error ~15%) to help tenants and owners coming up with a reasonable price.
 - Scraped around 10k properties in Madrid using Scrapy. The Spider is in [this repo](https://github.com/jorgerodpen/Fotocasa-Scrapy).
 - Engineered features from the extra elements in the description of the property.
 - Optimised Linear, Ridge, Lasso and Random Forest Regressors using a grid search.
