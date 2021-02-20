@@ -41,3 +41,27 @@ Northern boroughs have higher rent cost than southern boroughs. The most common 
 Size and number of bathrooms are highly correlated with the final rent cost. Other variables such as the number of rooms and wether the bathroom is ensuite or have also a relatively high correlation. 
 
 <img src="https://github.com/jorgerodpen/MadridRentalMarket/blob/main/correlation.png" width="400">
+
+## Model building
+Created a pipeline that first transforms categorical data to dummy variables and then models the data. 
+
+First, a linear regression with al variables was created to see the p-values for each coefficient. Multicollinearity and the effect of the sparse data was observed. 
+
+The data was splitted 20% test set and 80% training set. To measure the model performance two type of errors were used: relative error to see the model performance and mean absolute error for hyper-parameter selection. 
+
+Four models were used:
+- Multiple linear regression: It was used as a baseline for the model.
+- Ridge regression: Because the multicollinearity between variables. 
+- Lasso regression: Because of the sparsity of the data.
+- Random forest: Because of the sparsity and the multicollinearity of the data, random forest are well-known because they tend to overfit less. 
+
+## Model performance
+- Multiple linear regression: 18-20% error
+- Ridge regression: 18-19% error
+- Lasso regression: 18-19% error
+- Random forest: 15% error
+
+## Productionalization
+The app was the deploying using *Flask* to a web server called *Heroku* so that it can be used by owners and tennants to come up with a reasonable price. 
+
+The app can be seen and used here https://calculadora-alquiler-madrid.herokuapp.com/
